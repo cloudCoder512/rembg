@@ -1,0 +1,6 @@
+Flask
+Flask-Compress
+rembg
+opencv-python-headless
+Pillow
+numpy

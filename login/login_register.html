@@ -1,0 +1,116 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CutMaster Login Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link rel="icon" type="image/png" sizes="32x32" href="../icon/icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../icon/icon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<script src="../static/logic/loginscript.js" defer></script>
+<link rel="stylesheet" href="../static/csslogin.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="../icon/icon.png">
+        <img src="../icon/icon.png" alt="Website Logo">
+        </a>
+    </div>
+<div class="container">
+  <div class="header">
+    <h1>CutMaster Login Portal</h1>
+    <div class="top-links">
+      <a href="#">HOMEPAGE</a> | 
+      <a href="#">ABOUT US</a> |
+    </div>
+  </div>
+  <h2 id="title">Register</h2>
+  <div class="required-note">Required fields are marked with an asterisk:</div>
+  <div id="registerBox">
+    <div class="form-row required-field">
+      <label>Email</label>
+      <input type="email" id="email">
+    </div>
+    <div class="form-row required-field">
+      <label>Phone</label>
+      <input type="text" id="phone">
+    </div>
+    <div class="form-row required-field">
+      <label>Username</label>
+      <input type="text" id="username">
+    </div>
+    <div class="form-row required-field">
+      <label>Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="form-row required-field">
+      <label>Repeat password</label>
+      <input type="password" id="repeatpassword">
+    </div>
+    <div class="form-row">
+   <select id="country" class="form-row" required>
+    <option value="">Select your country</option>
+    <option value="United States">United States</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+    <option value="Germany">Germany</option>
+    <option value="France">France</option>
+    <option value="Japan">Japan</option>
+    <option value="China">China</option>
+    <option value="India">India</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Italy">Italy</option>
+    <option value="Spain">Spain</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Sweden">Sweden</option>
+    <option value="Singapore">Singapore</option>
+    <option value="UAE">United Arab Emirates</option>
+    <option value="South Korea">South Korea</option>
+    <option value="Russia">Russia</option>
+    <option value="South Africa">South Africa</option>
+  </select>
+</div>
+    <button onclick="register()">Register</button>
+  </div>
+  <div id="loginBox" style="display:none;">
+    <div class="form-row required-field">
+      <label>Username</label>
+      <input type="text" id="lusername">
+    </div>
+    <div class="form-row required-field">
+      <label>Password</label>
+      <input type="password" id="lpassword">
+    </div>
+    <div class="forgot-link">
+      <a href="#">Forgot your password?</a>
+    </div>
+    <button onclick="login()">Login</button>
+  </div>
+  <div class="loader" id="loader"><span></span></div>
+  <div class="msg" id="msg"></div>
+  <div class="switch-links">
+    <a href="#" onclick="toggle(); return false;" id="switchLink">Login</a>
+  </div>
+  <hr>
+  <div class="switch-links">
+    <a href="#" onclick="toggle(); return false;">Register</a> | 
+    <a href="#" onclick="toggle(); return false;">Login</a>
+  </div>
+  <div class="footer">
+    <div class="footer-nav">
+      <a href="#">HOMEPAGE</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">More info</a>
+      <a href="#">request account info</a>
+      <a href="#">forget info</a>
+    </div>
+    <div class="license">
+      CutMaster are licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+    </div>
+  </div>
+</div>
+</body>
+</html>
