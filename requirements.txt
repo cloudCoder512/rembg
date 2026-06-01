@@ -1,6 +1,6 @@
 Flask
 Flask-Compress
-rembg
+rembg[cpu]
 opencv-python-headless
 Pillow
 numpy
